@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sehat Saathi - AI-Driven Public Health Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="Sehat-Saathi-logo.jpg" alt="Sehat Saathi Logo">
+                <span>Sehat Saathi</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Sehat Saathi</h1>
+                <h2>AI-Driven Public Health Chatbot for Disease Awareness</h2>
+                <p>Empowering rural and urban communities with instant, reliable healthcare guidance through WhatsApp and SMS integration</p>
+                <div class="hero-buttons">
+                    <button class="cta-btn primary" onclick="openChatbot()">Try Chatbot</button>
+                    <button class="cta-btn secondary">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <i class="fas fa-mobile-alt"></i>
+                    <div class="chat-preview">
+                        <div class="message user">I have fever and headache</div>
+                        <div class="message bot">I can help you with that! Let me provide some guidance...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <h3>24/7</h3>
+                <p>Available</p>
+            </div>
+            <div class="stat">
+                <h3>Multi-lingual</h3>
+                <p>Support</p>
+            </div>
+            <div class="stat">
+                <h3>Government</h3>
+                <p>Integrated</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Who are we ?</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Bridging Healthcare Gaps Through Artificial Intelligence</h3>
+                    <p>Sehat Saathi is an innovative AI-powered chatbot designed to address the critical healthcare information gap in rural and semi-urban India. Our solution leverages WhatsApp and SMS to provide instant, reliable health guidance, myth-busting, and connections to government health services.</p>
+
+                    <div class="problem-solution">
+                        <div class="problem">
+                            <h4><i class="fas fa-exclamation-triangle"></i> The Problem</h4>
+                            <ul>
+                                <li>Limited healthcare access in rural areas</li>
+                                <li>Health misinformation spreading rapidly</li>
+                                <li>Language barriers in health communication</li>
+                                <li>Lack of awareness about government health schemes</li>
+                            </ul>
+                        </div>
+                        <div class="solution">
+                            <h4><i class="fas fa-lightbulb"></i> Our Solution</h4>
+                            <ul>
+                                <li>24/7 AI-powered health guidance</li>
+                                <li>Real-time myth-busting capabilities</li>
+                                <li>Multi-lingual support for accessibility</li>
+                                <li>Direct integration with government APIs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div>
+                        <img src="Sehat-Saathi-logo.jpg" alt="Sehat-Saathi" height="355" width="600">
+                    </div>
+                    <div class="workflow-diagram">
+                        <div class="workflow-step">
+                            <i class="fab fa-whatsapp"></i>
+                            <p>User sends message</p>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="workflow-step">
+                            <i class="fas fa-brain"></i>
+                            <p>AI processes query</p>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="workflow-step">
+                            <i class="fas fa-reply"></i>
+                            <p>Instant response</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why are we Different ?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Bidirectional Voice + Text on WhatsApp</h3>
+                    <p>Full voice and text chat for rural accessibility</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Tokenized Family Access & Security</h3>
+                    <p>Secure multi-user profiles with password protection</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Custom Myth-Busting Engine</h3>
+                    <p>Real-time fact-checking with self-built database</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h3>Weather-Integrated Daily Health Tips</h3>
+                    <p>Contextual advice based on local forecasts</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Direct NDRF Emergency Alerts</h3>
+                    <p>Automated outbreak and disaster notifications</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Conditional Doctor Teleconsultation Routing</h3>
+                    <p>Bot-first response with satisfaction-based escalation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <h2>Technology Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3><i class="fas fa-language"></i> Natural Language Processing</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            
+                            <p>Rasa</p>
+                        </div>
+                    </div>
+                    <p>Extracts user intent and symptoms from chat messages</p>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-robot"></i> Machine Learning & AI</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <p>TensorFlow</p>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-chart-line"></i>
+                            <p>scikit-learn</p>
+                        </div>
+                    </div>
+                    <p>Predicts health advice using trained medical models</p>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-server"></i> Backend & API</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fab fa-aws"></i>
+                            <p>AWS</p>
+                        </div>
+                    </div>
+                    <p>Handles secure requests and connects health APIs</p>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-mobile-alt"></i> Frontend & Messaging</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <p>WhatsApp</p>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-sms"></i>
+                            <p>Twilio</p>
+                        </div>
+                    </div>
+                    <p>Facilitates real-time health chats for users</p>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & CI/CD</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fab fa-microsoft"></i>
+                            <p>Azure</p>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-docker"></i>
+                            <p>Docker</p>
+                        </div>
+                    </div>
+                    <p>Automates deployment for scalable chatbot service</p>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-database"></i> Data & Analytics</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fas fa-elephant"></i>
+                            <p>PostgreSQL</p>
+                        </div>
+                    </div>
+                    <p>Stores, analyzes, and manages all medical interactions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact">
+        <div class="container">
+            <h2>Impact & Benefits</h2>
+            <div class="impact-content">
+                <div class="impact-stats">
+                    <div class="impact-card">
+                        <i class="fas fa-hospital"></i>
+                        <h3>Improved Health Awareness</h3>
+                        <p>AI-driven tips raise community preventive care</p>
+                    </div>
+                    <div class="impact-card">
+                        <i class="fas fa-microphone"></i>
+                        <h3>Vernacular Voice Support</h3>
+                        <p>Empowers semi-literate and elderly users</p>
+                    </div>
+                    <div class="impact-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Trusted Information</h3>
+                        <p>Misinformation busting ensures reliable medical advice</p>
+                    </div>
+                    <div class="impact-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Family & Rural Inclusion</h3>
+                        <p>Multi-user profiles and offline access widen reach</p>
+                    </div>
+                </div>
+                <div class="benefits-section">
+                    <h3>Solution Benefits</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit">
+                            <i class="fas fa-globe"></i>
+                            <h4>Social Inclusion</h4>
+                            <p>Expands healthcare access for rural, elderly, and illiterate users</p>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-dollar-sign"></i>
+                            <h4>Economic Savings</h4>
+                            <p>Reduces medical costs through remote guidance</p>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <h4>Health System Efficiency</h4>
+                            <p>Early detection and teleconsults lighten clinic workload</p>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Environmental Impact</h4>
+                            <p>Digital interactions lower carbon footprint</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Team Binary Bandits</h3>
+                    <div class="contact-items">
+                        <img src="WhatsApp Image 2025-09-24 at 08.53.21.jpeg.jpg" alt="Group photo" height="240" width="450">
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p><br>sehatsaathi@gov.ac.in</p>
+                        </div>
+                        
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/realhrishi/Sehat-Saathi" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/hrishirajchowdhury/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B3nCf0iDcSiWZULZRv3ZnUQ%3D%3D" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://youtube.com/playlist?list=PLjg4C3oYv_bYOe6qTFvJ2cAwPefnuoYCW&si=-OpFRFlKn2EtZLxs" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="demo-section">
+                    <h3>Experience Sehat Saathi</h3>
+                    <p>Try our demo and see how AI can transform healthcare access</p>
+                    <button class="demo-btn" onclick="openChatbot()">
+                        <i class="fas fa-play"></i>
+                        Launch Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="Sehat-Saathi-logo.jpg" alt="Sehat Saathi"  >
+                    <p>Empowering healthier communities <br>through Artificial Intelligence</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-references">
+                    <h4>References</h4>
+                    <ul>
+                        <link href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(24)00202-4/fulltext" rel="stylesheet">
+                        <li><a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(24)00202-4/fulltext" target="_blank">Lancet Digital Health Study</a></li>
+                        <li><a href="https://www.who.int/publications/i/item/9789241514699" target="_blank">WHO Mobile Health Report</a></li>
+                        <li><a href="https://www.niti.gov.in/sites/default/files/2023-02/ndhm_strategy_overview.pdf" target="_blank">NITI Aayog Digital Health Mission</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sehat Saathi - Team Binary Bandits. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Chatbot Button -->
+    <div class="chatbot-float" id="chatbot-float">
+        <button onclick="toggleChatbot()" class="chatbot-btn">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chatbot-preview" id="chatbot-preview">
+            <div class="chatbot-header">
+                <h4>Sehat Saathi Chatbot</h4>
+                <button onclick="toggleChatbot()" class="close-btn">&times;</button>
+            </div>
+            <div class="chatbot-body">
+                <div class="chat-message bot">
+                    <p>Hello! I'm Sehat Saathi. How can I help you with your health today?</p>
+                </div>
+                <div class="chat-message bot">
+                    <p>You can ask me about:</p>
+                    <ul>
+                        <li>Common health symptoms</li>
+                        <li>Government health schemes</li>
+                        <li>Vaccination information</li>
+                        <li>Emergency contacts</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chatbot-footer">
+                <input type="text" placeholder="Type your health question...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
